@@ -1,0 +1,9 @@
+[PROD]
+DB_URI = 
+
+
+[TEST]
+DB_URI = mongodb+srv://rain:rain1104@raincluster.1sjdk98.mongodb.net/test
+
+
+mongodb+srv://rain:rain1104@/test

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Rain Bilibili Analysis</title>
+    </head>
+
+    <body>
+        {% extends 'layout.html' %}
+        {% block content %}
+        <!-- header -->
+        <header class="navbar-fixed-top">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+          </header>
+          <!-- ./header -->
+        
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up">
+                <h1 class="size-30">this is my first put</h1>
+                    <h2 class="size-30">this is my home</h2>
+                    <div id='chart' class='chart'>
+                        <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+                        <script>
+                            var graphs = {{graph1json | safe}};
+                            Plotly.plot('chart',graphs,{});
+                        </script>
+                    </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    </bdoy>
+</html>
